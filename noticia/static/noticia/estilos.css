@@ -1,0 +1,22 @@
+body {
+    background-color: #121212;
+    color: #e0e0e0;
+    font-family: 'Segoe UI', system-ui, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+h1 {
+    color: #00d26a; /* Verde brillante */
+    font-size: 3.5rem;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1.2rem;
+    color: #a0a0a0;
+}
