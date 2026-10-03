@@ -43,3 +43,7 @@ El servidor se iniciará en http://127.0.0.1:8000/. Al ingresar a esta URL, podr
 El sistema está configurado para manejar errores 404 (recursos no encontrados). Puedes verificarlo intentando acceder a una ruta inexistente, por ejemplo:
 http://127.0.0.1:8000/ruta-falsa/
 
+
+# A continuación se presenta el Diagrama Entidad-Relación que modela la estructura del proyecto noticia
+
+![Diagrama Entidad-Relación de la base de datos](diagrama.png)
