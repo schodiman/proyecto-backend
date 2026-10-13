@@ -15,12 +15,17 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
+from django.contrib.auth import views as vistas_auth 
 from django.urls import path, include
-from noticia.views import inicio
+from noticia import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', inicio, name='inicio'),
+    path('', views.inicio, name='inicio'),
     path('noticia/', include('noticia.urls')),
+    path('autenticacion/', include('django.contrib.auth.urls')),
+    path('login/', vistas_auth.LoginView.as_view()),
+    path('logout/', vistas_auth.LogoutView.as_view()),
+    path('registro/', views.registro)
 ]
 handler404 = 'noticia.views.mi_error_404'
