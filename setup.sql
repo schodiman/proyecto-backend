@@ -1,3 +1,4 @@
-CREATE DATABASE plataforma_noticias;
-CREATE USER usario_backend WITH PASSWORD 'contraseña_segura_123';
-GRANT ALL PRIVILEGES ON DATABASE plataforma_noticias TO usario_backend;
+CREATE DATABASE if NOT EXISTS defaultdb;
+CREATE USER 'avnadmin'@'%' IDENTIFIED BY 'tu_contraseña_segura';
+GRANT ALL PRIVILEGES ON defaultdb.* TO 'avnadmin'@'%';
+FLUSH PRIVILEGES;
